@@ -12,29 +12,41 @@ The trained models are provided [here](https://drive.google.com/drive/folders/1Z
 
 In this section, we will introduce the datasets we use for each experiment. 
 
-### Synthetic Image Super-Resolution
+### Image Super-Resolution
 
-We use a high quality image dataset [DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K/) for training and testing. Training and testing code can be found in folder `./sr_synthetic`.
+Training and testing code can be found in folder `./sr`
 
-### Real-Word Image Super-Resolution
+#### Synthetic Image Super-Resolution
 
-We use a real super-resolution dataset [RealVSR](https://github.com/IanYeung/RealVSR) for training and testing. Training and testing code can be found in folder `./sr_real`.
+We use a high quality image dataset [DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K/) for training and testing. .
 
-### Synthetic Image Deraining
+#### Real-Word Image Super-Resolution
 
-We use a synthetic image dataset [Rain1800](https://drive.google.com/file/d/1_pP8fR-gpHUB0q1kpvZxKALvjLZ-JVM8/view) for training and dataset [Rain100L](http://www.cs.yorku.ca/~kamel/sidd/) for testing. Training and testing code can be found in folder `./deraining_synthetic`.
+We use a real super-resolution dataset [RealVSR](https://github.com/IanYeung/RealVSR) for training and testing. 
 
-### Real-world Image Deraining
+### Image Super-Resolution
 
-We use a real image dataset [SPA](https://github.com/stevewongv/SPANet) for training and testing. Training and testing code can be found in folder `./deraining_real`.
+Training and testing code can be found in folder `./deraining`
 
-### Synthetic Image Dehazing
+#### Synthetic Image Deraining
 
-We use a synthetic dehazing dataset [OTS](https://sites.google.com/view/reside-dehaze-datasets) for training and testing. Training and testing code can be found in folder `./dehazing_synthetic`.
+We use a synthetic image dataset [Rain1800](https://drive.google.com/file/d/1_pP8fR-gpHUB0q1kpvZxKALvjLZ-JVM8/view) for training and dataset [Rain100L](http://www.cs.yorku.ca/~kamel/sidd/) for testing.
 
-### Real-World Image Dehazing
+#### Real-world Image Deraining
 
-We use a real  dehazing dataset [Dense-haze](https://data.vision.ee.ethz.ch/cvl/ntire19//dense-haze/) for training and testing. Training and testing code can be found in folder `./dehazing_real`.
+We use a real image dataset [SPA](https://github.com/stevewongv/SPANet) for training and testing.
+
+### Image Dehazing
+
+Training and testing code can be found in folder `./dehazing`
+
+#### Synthetic Image Dehazing
+
+We use a synthetic dehazing dataset [OTS](https://sites.google.com/view/reside-dehaze-datasets) for training and testing. 
+
+#### Real-World Image Dehazing
+
+We use a real  dehazing dataset [Dense-haze](https://data.vision.ee.ethz.ch/cvl/ntire19//dense-haze/) for training and testing. 
 
 All these datasets are only used for academic purpose.
 
