@@ -6,7 +6,7 @@
 _Recent studies show that, without any prior model, the unsupervised restoration learning problem can be optimally formulated as an optimal transport (OT) problem, which has shown promising performance on denoising tasks to approach the performance of supervised methods. However, it still significantly lags behind state-of-the-art supervised methods on complex restoration tasks such as super-resolution, deraining, and dehazing. In this paper, we exploit the sparsity of degradation in the OT
 framework to significantly boost its performance on these tasks. First, we disclose an observation that the degradation in these tasks is quite sparse in frequency domain, and then propose a sparsity-aware optimal transport (SOT) criterion for unsupervised restoration learning. Further, we provide an analytic example to illustrate that exploiting the sparsity helps to reduce the ambiguity in finding an inverse map for restoration. Experiments on real-world super-resolution, deraining, and dehazing demonstrate that SOT can improve the PSNR of OT by about 2.6 dB, 2.7 dB and 1.3 dB, respectively, while achieving the best perception scores among the compared supervised and unsupervised methods. Particularly, on the three tasks, SOT significantly outperforms existing unsupervised methods and approaches the performance of state-of-the-art supervised methods._
 
-The trained models are provided in the `./checkpoint` folder of each experiment. The proposed formulation is implemented in an adversarial training framework using [WGAN-gp](https://proceedings.neurips.cc/paper/2017/hash/892c3b1c6dccd52936e27cbd0ff683d6-Abstract.html). The generator is modified from part of [MPRNet](https://github.com/swz30/MPRNet) and the discriminator is modified from that of [SRGAN](https://github.com/tensorlayer/srgan). We use them here only for academic use purpose.
+The trained models are provided [here](https://drive.google.com/drive/folders/1ZUF_9URf4Tht2xsB_E7CCCNREPxq_9cd?usp=share_link). The proposed formulation is implemented in an adversarial training framework using [WGAN-gp](https://proceedings.neurips.cc/paper/2017/hash/892c3b1c6dccd52936e27cbd0ff683d6-Abstract.html). The generator is modified from part of [MPRNet](https://github.com/swz30/MPRNet) and the discriminator is modified from that of [SRGAN](https://github.com/tensorlayer/srgan). We use them here only for academic use purpose.
 
 ## Datasets
 
@@ -99,6 +99,6 @@ python test.py --model="./checkpoint/model_pre_super4_200_50.pth" --dataset="./D
 
 ![alt text](images/haze_real.png )
 
-**Quantitative comparison of the compared methods on real-world data (using the Dense-haze dataset [87]).:**
+**Quantitative comparison of the compared methods on real-world data (using the Dense-haze dataset).:**
 
 ![alt text](images/q_haze_real.png )
